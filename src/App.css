@@ -1,0 +1,213 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button1-container {
+  position: fixed;
+  top: 60%;
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.button2-container {
+  position: fixed;
+  top: 60%;
+  left: 35%;
+  transform: translateX(-50%);
+}
+
+.welcome-dot {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome {
+  font-size: 150%;
+  position: fixed;
+  top: 28.5%;
+  left: 5%;
+  color: black;
+  z-index: 1;
+}
+
+.heading1 {
+  font-size: 250%;
+  font-weight: bold;
+  position: fixed;
+  top: 37%;
+  left: 5%;
+  color: red;
+}
+
+.heading2 {
+  font-size: 250%;
+  font-weight: bold;
+  position: fixed;
+  top: 45%;
+  left: 5%;
+  color: red;
+}
+
+.maruti {
+  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\background_image.png');
+  left: 15%;
+  width: 85%;
+  position: fixed;
+}
+
+.logo {
+  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\maruti_suzuki_com.png');
+  background-size: 30% auto;
+  background-position: 5% 5%;
+  width: 100%;
+  position: fixed;
+}
+
+.dot {
+  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\dott.png');
+  background-size: 5% auto;
+  background-position: 20% 30%;
+}
+
+.rect {
+  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\rect.png');
+  background-size: 10% auto;
+  background-position: 6% 56%;
+}
+
+.button {
+	display: flex;
+	height: 40px;
+	padding: 0;
+	background: red;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	font-size: 100%;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.button:hover {
+  background: darkred;
+}
+
+.button:active {
+  background: brown;
+}
+
+
+.button_text,
+.button_icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 20px;
+	color: #fff;
+	height: 100%;
+}
+
+.button_icon {
+	font-size: 1.5em;
+	background: rgba(0, 0, 0, 0.08);
+}
+
+
+@media (max-width: 968px) {
+  .maruti {
+    left: 0;
+    width: 100%;
+  }
+
+  .logo {
+    background-size: 30% auto;
+    background-position: 5% 5%;
+  }
+
+  .dot {
+    background-size: 5% auto;
+    background-position: 27% 32%;
+  }
+
+  .rect {
+    background-size: 5% auto;
+    background-position: 5% 47%;
+  }
+
+  .welcome {
+    font-size: 80%;
+    position: fixed;
+    top: 31%;
+    left: 5%;
+  }
+
+  .heading1 {
+    font-size: 100%;
+    font-weight: bold;
+    position: fixed;
+    top: 37%;
+    left: 5%;
+  }
+
+  .heading2 {
+    font-size: 100%;
+    font-weight: bold;
+    position: fixed;
+    top: 42%;
+    left: 5%;
+  }
+
+  .button1-container {
+    position: absolute;
+    top: 48%;
+    left: 12%;
+    transform: translateX(-50%);
+  }
+  
+  .button2-container {
+    position: absolute;
+    top: 48%;
+    left: 35%;
+    transform: translateX(-50%);
+  }
+
+  .button {
+    display: flex;
+    font-size: 10%;
+    display: flex;
+    height: 20px;
+    padding: 0;
+    background: red;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .button_text,
+  .button_icon {
+	  display: inline-flex;
+	  align-items: center;
+	  padding: 0 8px;
+	  color: #fff;
+	  height: 100%;
+  }
+
+  .button_icon {
+	  font-size: 0.5em;
+	  background: rgba(0, 0, 0, 0.08);
+  }
+}
