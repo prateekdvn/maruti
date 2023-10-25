@@ -5,17 +5,20 @@ function App() {
     <div className="App">
       
       <div className='background-container'>
-        <div className='background-image maruti'></div>
-        <div className='background-image logo'></div>
-        <div className='welcome-dot'>
-          <div className='welcome'>WELCOME TO</div>
-          <div className='background-image dot'></div>
+        <div className='background-image login-background-image'></div>
+        <div className='background-image login-marutisuzuki-logo'></div>
+        <div className='login-welcome'>
+          <div className='login-welcome-text'>WELCOME TO</div>
+          <div className='background-image login-welcome-image'></div>
         </div>
         
-        <div className='heading1'>COMMERCIAL CHANNEL</div>
-        <div className='heading2'>SALES MAPPING</div>
-        <div className='background-image rect'></div>
-        
+        <div className='login-heading1'>COMMERCIAL CHANNEL</div>
+        <div className='login-heading2'>SALES MAPPING</div>
+        <div className='background-image login-rect-image'></div>
+
+      </div>
+
+      <div className='button-container'>
         <div className='button1-container'>
           <button className='button'>
             <span className='button_icon'>
@@ -23,7 +26,6 @@ function App() {
             </span>
             <span className='button_text'>Login as Dealer</span>
           </button>
-          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         </div>
         
         <div className='button2-container'>
@@ -33,9 +35,7 @@ function App() {
             </span>
             <span className='button_text'>Login as Employee</span>
           </button>
-          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         </div>
-
       </div>
 
     </div>

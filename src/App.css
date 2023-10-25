@@ -1,13 +1,24 @@
 .background-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: flex-start;
+  transform: translateY(-50%);
+  top: 70%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
 }
 
 .background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -15,27 +26,43 @@
   background-repeat: no-repeat;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(235,0,0);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 .button1-container {
-  position: fixed;
-  top: 60%;
-  left: 15%;
-  transform: translateX(-50%);
+  display: flex;
+  z-index: 1;
+  margin-right: 10px;
 }
 
 .button2-container {
-  position: fixed;
-  top: 60%;
-  left: 35%;
-  transform: translateX(-50%);
+  display: flex;
+  z-index: 1;
 }
 
-.welcome-dot {
-  position: relative;
+.login-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
 }
 
-.welcome {
+.login-welcome-text {
   font-size: 150%;
   position: fixed;
   top: 28.5%;
@@ -44,7 +71,7 @@
   z-index: 1;
 }
 
-.heading1 {
+.login-heading1 {
   font-size: 250%;
   font-weight: bold;
   position: fixed;
@@ -53,7 +80,7 @@
   color: red;
 }
 
-.heading2 {
+.login-heading2 {
   font-size: 250%;
   font-weight: bold;
   position: fixed;
@@ -62,46 +89,34 @@
   color: red;
 }
 
-.maruti {
-  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\background_image.png');
+.login-background-image {
+  background-image: url('../public/login-background-image.png');
   left: 15%;
   width: 85%;
   position: fixed;
 }
 
-.logo {
-  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\maruti_suzuki_com.png');
+.login-marutisuzuki-logo {
+  background-image: url('../public/login-marutisuzuki-logo.png');
   background-size: 30% auto;
   background-position: 5% 5%;
   width: 100%;
   position: fixed;
 }
 
-.dot {
-  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\dott.png');
+.login-welcome-image {
+  background-image: url('../public/login-welcome-image.png');
   background-size: 5% auto;
   background-position: 20% 30%;
+  width: 100%;
+  height: 100%;
 }
 
-.rect {
-  background-image: url('C:\Users\Swift\OneDrive\Documents\ReactJS\maruti-login\public\rect.png');
-  background-size: 10% auto;
-  background-position: 6% 56%;
-}
-
-.button {
-	display: flex;
-	height: 40px;
-	padding: 0;
-	background: red;
-	border: none;
-	outline: none;
-	border-radius: 20px;
-	overflow: hidden;
-	font-family: "Quicksand", sans-serif;
-	font-size: 100%;
-	font-weight: 500;
-	cursor: pointer;
+.login-rect-image {
+  background-image: url('../public/login-rect-image.png');
+  background-size: 30% auto;
+  background-position: 6% 5%;
+  z-index: 2zzz;
 }
 
 .button:hover {
@@ -111,7 +126,6 @@
 .button:active {
   background: brown;
 }
-
 
 .button_text,
 .button_icon {
@@ -128,35 +142,35 @@
 }
 
 
-@media (max-width: 968px) {
-  .maruti {
+@media (max-width: 1100px) {
+  .login-background-image {
     left: 0;
     width: 100%;
   }
 
-  .logo {
+  .login-marutisuzuki-logo {
     background-size: 30% auto;
     background-position: 5% 5%;
   }
 
-  .dot {
+  .login-welcome-image {
     background-size: 5% auto;
     background-position: 27% 32%;
   }
 
-  .rect {
+  .login-rect-image {
     background-size: 5% auto;
     background-position: 5% 47%;
   }
 
-  .welcome {
+  .login-welcome-text {
     font-size: 80%;
     position: fixed;
     top: 31%;
     left: 5%;
   }
 
-  .heading1 {
+  .login-heading1 {
     font-size: 100%;
     font-weight: bold;
     position: fixed;
@@ -164,7 +178,7 @@
     left: 5%;
   }
 
-  .heading2 {
+  .login-heading2 {
     font-size: 100%;
     font-weight: bold;
     position: fixed;
@@ -172,29 +186,22 @@
     left: 5%;
   }
 
+  .button-container {
+    top: 50%;
+  }
+
   .button1-container {
-    position: absolute;
-    top: 48%;
-    left: 12%;
-    transform: translateX(-50%);
+    display: flex;
+    margin-right: 10px;
   }
   
   .button2-container {
-    position: absolute;
-    top: 48%;
-    left: 35%;
-    transform: translateX(-50%);
+    display: flex;
   }
 
   .button {
     display: flex;
-    font-size: 10%;
-    display: flex;
-    height: 20px;
-    padding: 0;
-    background: red;
-    border-radius: 20px;
-    font-weight: 500;
+    padding: 5px 10px;
   }
 
   .button_text,
